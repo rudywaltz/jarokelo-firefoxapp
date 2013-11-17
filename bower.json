@@ -1,0 +1,24 @@
+{
+  "name": "jarokelo",
+  "version": "0.0.1",
+  "authors": [
+    "David Barkoczi <david.barkoczi@gmail.com>"
+  ],
+  "description": "Jarokelo.hu jelentes nezo es bekuldo appja",
+  "license": "MIT",
+  "homepage": "jarokelo.hu",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.1",
+    "angular-ui-router": "~0.2.0",
+    "angular-translate": "~1.1.0"
+  }
+}
