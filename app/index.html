@@ -18,6 +18,8 @@
     <!-- build:js scripts/angular.js -->
        <script src="/scripts/main.js"></script>
 		   <script src="scripts/controllers/Translate.js"></script>
+    <script src="scripts/controllers/City.js"></script>
+    <script src="scripts/controllers/list.js"></script>
     <!-- endbuild -->
 </head>
 <body>
@@ -30,7 +32,7 @@
 						  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
             </menu>
             <h1>
-               {{ 'HEADLINE' | translate }}
+               <a href="/">{{ 'HEADLINE' | translate }}</a>
             </h1>
         </header>
     </section>
