@@ -1,0 +1,9 @@
+<h1>{{ 'LIST_VIEW' | translate }}</h1>
+
+<div  ng-controller="ListCtrl">
+	<ul ng-repeat="report in list">
+		<li><a href="{{ report.detail_url }}" target="_blank">{{report.nadpis}}</a></li>
+		<li><img src="{{report.image}}" alt=""></li>
+	</ul>
+
+</div>
