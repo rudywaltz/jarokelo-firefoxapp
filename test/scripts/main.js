@@ -15,15 +15,17 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
     .state('city', {
       url: '/city',
       templateUrl: 'views/city.html',
+      controller: 'CityCtrl'
     })
     .state('list', {
       url: '/list',
       templateUrl: 'views/list.html',
+      controller: 'ListCtrl'
     })
     .state('report', {
-      url: '/report:id',
+      url: '/report',
       templateUrl: 'views/report.html',
-      controller: 'report',
+      controller: 'ReportCtrl'
     });
 });
 

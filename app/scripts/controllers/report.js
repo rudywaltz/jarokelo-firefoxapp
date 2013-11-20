@@ -2,5 +2,5 @@
 
 angular.module('jarokeloApp')
   .controller('ReportCtrl', function ($scope) {
-    $scope.text = 'messige';
+    $scope.text = 'This is new text';
   });
