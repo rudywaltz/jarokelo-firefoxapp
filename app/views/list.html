@@ -2,8 +2,8 @@
 
 <div  ng-controller="ListCtrl">
 	<ul ng-repeat="report in list">
-		<li><a href="{{ report.detail_url }}" target="_blank">{{report.nadpis}}</a></li>
-		<li><img src="{{report.image}}" alt=""></li>
+		<li><a href="#/report/{{ report.detail_url }}" target="_blank">{{report.nadpis}}</a></li>
+		<li><img src="http://www.sandbox.odkazprestarostu.sk/{{report.image}}" alt=""></li>
 	</ul>
 
 </div>

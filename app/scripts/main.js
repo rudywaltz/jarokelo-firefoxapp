@@ -2,7 +2,7 @@
 'use strict';
 
 var jarokelo = angular.module('jarokeloApp', ['ui.router',
- 'pascalprecht.translate']);
+ 'pascalprecht.translate', 'configuration']);
 
 jarokelo.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
@@ -19,6 +19,11 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
     .state('list', {
       url: '/list',
       templateUrl: 'views/list.html',
+    })
+    .state('report', {
+      url: '/report:id',
+      templateUrl: 'views/report.html',
+      controller: 'report',
     });
 });
 

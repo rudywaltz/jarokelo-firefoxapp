@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="jarokeloApp">
+<head>
+  <title>Járókelő.hu</title>
+  <meta charset="utf-8">
+  <link href="/styles/gaiabb/all.css" rel="stylesheet" type="text/css">
+  <link href="/styles/main.css" rel="stylesheet" type="text/css">	
+   <!-- build:js scripts/angular.js -->
+
+		<!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+   <script src="/bower_components/angular/angular.js"></script>
+   <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+   <script src="/bower_components/angular-translate/angular-translate.js"></script>
+   <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/angular.js -->
+      <script src="/scripts/main.js"></script>
+      <!--<script src="/scripts/config.js"></script>-->
+		  <script src="scripts/controllers/Translate.js"></script>
+      <script src="scripts/controllers/City.js"></script>
+      <script src="scripts/controllers/list.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+ <section role="region">
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <div id="online-status" title="Online"></div>
+            <menu type="toolbar" ng-controller="TranslateCtrl">
+						  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
+						  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
+            </menu>
+            <h1>
+               <a href="/">{{ 'HEADLINE' | translate }}</a>
+            </h1>
+        </header>
+    </section>
+
+    <div id="main" ui-view="">
+       
+    </div>
+
+</body>
+</html>
+

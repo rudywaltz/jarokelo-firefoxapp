@@ -17,6 +17,7 @@
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-firefoxos": "~0.1.1",
     "grunt-contrib-compress": "~0.5.2",
-    "grunt-contrib-handlebars": "~0.5.9"
+    "grunt-contrib-handlebars": "~0.5.9",
+    "node-firefoxos-cli": "~0.0.2"
   }
 }
