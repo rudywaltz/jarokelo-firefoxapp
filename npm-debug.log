@@ -1,0 +1,678 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-autoprefixer',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.20
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json jarokelo@0.1.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-autoprefixer', null ]
+8 verbose cache add name=undefined spec="grunt-autoprefixer" args=["grunt-autoprefixer",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'grunt-autoprefixer',
+9 verbose parsed url   path: 'grunt-autoprefixer',
+9 verbose parsed url   href: 'grunt-autoprefixer' }
+10 silly lockFile de9ac666-grunt-autoprefixer grunt-autoprefixer
+11 verbose lock grunt-autoprefixer C:\Users\Oli\AppData\Roaming\npm-cache\de9ac666-grunt-autoprefixer.lock
+12 silly lockFile de9ac666-grunt-autoprefixer grunt-autoprefixer
+13 silly lockFile de9ac666-grunt-autoprefixer grunt-autoprefixer
+14 verbose addNamed [ 'grunt-autoprefixer', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 07ba9399-grunt-autoprefixer grunt-autoprefixer@
+17 verbose lock grunt-autoprefixer@ C:\Users\Oli\AppData\Roaming\npm-cache\07ba9399-grunt-autoprefixer.lock
+18 silly addNameRange { name: 'grunt-autoprefixer', range: '*', hasData: false }
+19 verbose url raw grunt-autoprefixer
+20 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-autoprefixer' ]
+21 verbose url resolved https://registry.npmjs.org/grunt-autoprefixer
+22 info trying registry request attempt 1 at 23:41:21
+23 verbose etag "DCQ6PNXJHVIWY19KFBDAQJ6UO"
+24 http GET https://registry.npmjs.org/grunt-autoprefixer
+25 http 304 https://registry.npmjs.org/grunt-autoprefixer
+26 silly registry.get cb [ 304,
+26 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+26 silly registry.get     etag: '"DCQ6PNXJHVIWY19KFBDAQJ6UO"',
+26 silly registry.get     date: 'Wed, 20 Nov 2013 22:41:21 GMT',
+26 silly registry.get     'content-length': '0' } ]
+27 verbose etag grunt-autoprefixer from cache
+28 silly addNameRange number 2 { name: 'grunt-autoprefixer', range: '*', hasData: true }
+29 silly addNameRange versions [ 'grunt-autoprefixer',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.20130424',
+29 silly addNameRange     '0.1.20130516',
+29 silly addNameRange     '0.1.20130615',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.20130718',
+29 silly addNameRange     '0.2.20130806',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1' ] ]
+30 verbose addNamed [ 'grunt-autoprefixer', '0.4.1' ]
+31 verbose addNamed [ '0.4.1', '0.4.1' ]
+32 silly lockFile 9f720680-grunt-autoprefixer-0-4-1 grunt-autoprefixer@0.4.1
+33 verbose lock grunt-autoprefixer@0.4.1 C:\Users\Oli\AppData\Roaming\npm-cache\9f720680-grunt-autoprefixer-0-4-1.lock
+34 silly lockFile 9f720680-grunt-autoprefixer-0-4-1 grunt-autoprefixer@0.4.1
+35 silly lockFile 9f720680-grunt-autoprefixer-0-4-1 grunt-autoprefixer@0.4.1
+36 silly lockFile 07ba9399-grunt-autoprefixer grunt-autoprefixer@
+37 silly lockFile 07ba9399-grunt-autoprefixer grunt-autoprefixer@
+38 silly resolved [ { name: 'grunt-autoprefixer',
+38 silly resolved     description: 'Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.',
+38 silly resolved     version: '0.4.1',
+38 silly resolved     bin: { autoprefixer: './node_modules/autoprefixer/bin/autoprefixer' },
+38 silly resolved     homepage: 'https://github.com/nDmitry/grunt-autoprefixer',
+38 silly resolved     author: { name: 'Dmitry Nikitenko', email: 'dima.nikitenko@gmail.com' },
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'git://github.com/nDmitry/grunt-autoprefixer.git' },
+38 silly resolved     bugs: { url: 'https://github.com/nDmitry/grunt-autoprefixer/issues' },
+38 silly resolved     licenses: [ [Object] ],
+38 silly resolved     main: 'Gruntfile.js',
+38 silly resolved     engines: { node: '>= 0.8.0' },
+38 silly resolved     scripts: { postinstall: '', test: 'grunt test' },
+38 silly resolved     dependencies: { autoprefixer: '~0.8.20131020' },
+38 silly resolved     devDependencies:
+38 silly resolved      { grunt: '~0.4.1',
+38 silly resolved        'grunt-contrib-jshint': '~0.7.0',
+38 silly resolved        'grunt-contrib-clean': '~0.5.0',
+38 silly resolved        'grunt-contrib-nodeunit': '~0.2.2',
+38 silly resolved        'grunt-contrib-copy': '~0.4.1',
+38 silly resolved        'load-grunt-tasks': '~0.2.0' },
+38 silly resolved     peerDependencies: { grunt: '~0.4.1' },
+38 silly resolved     keywords: [ 'gruntplugin', 'prefix', 'autoprefixer' ],
+38 silly resolved     readme: '# grunt-autoprefixer\n[![Build Status](https://travis-ci.org/nDmitry/grunt-autoprefixer.png?branch=master)](https://travis-ci.org/nDmitry/grunt-autoprefixer) \n[![Dependency Status](https://david-dm.org/nDmitry/grunt-autoprefixer.png)](https://david-dm.org/nDmitry/grunt-autoprefixer)\n\n> [Autoprefixer](https://github.com/ai/autoprefixer) parses CSS and adds vendor-prefixed CSS properties using the [Can I Use](http://caniuse.com/) database.\n\n## Getting Started\nThis plugin requires Grunt `~0.4.0`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-autoprefixer --save-dev\n```\n\nOne the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-autoprefixer\');\n```\n\n## The "autoprefixer" task\n\n### Overview\nIn your project\'s Gruntfile, add a section named `autoprefixer` to the data object passed into `grunt.initConfig()`.\n\n```js\ngrunt.initConfig({\n  autoprefixer: {\n    options: {\n      // Task-specific options go here.\n    },\n    your_target: {\n      // Target-specific file lists and/or options go here.\n    },\n  },\n})\n```\n\n### Options\n\n#### options.browsers\nType: `Array`\nDefault value: `[\'> 1%\', \'last 2 versions\', \'ff 17\', \'opera 12.1\']`\n\nYou can specify browsers actual for your project:\n\n```js\noptions: {\n  browsers: [\'last 2 version\', \'ie 8\', \'ie 7\']\n}\n```\n\n[See more](https://github.com/ai/autoprefixer#browsers) in Autoprefixer\'s README.md.\n\n### Usage Example\n\n```js\ngrunt.initConfig({\n\n  autoprefixer: {\n\n    options: {\n      // Task-specific options go here.\n    },\n\n    // just prefix the specified file\n    single_file: {\n      options: {\n        // Target-specific options go here.\n      },\n      src: \'src/css/file.css\',\n      dest: \'dest/css/file.css\'\n    },\n\n    // prefix all specified files and save them separately\n    multiple_files: {\n      expand: true,\n      flatten: true,\n      src: \'src/css/*.css\', // -> src/css/file1.css, src/css/file2.css\n      dest: \'dest/css/\' // -> dest/css/file1.css, dest/css/file2.css\n    },\n\n    // prefix all specified files and concat them into the one file\n    concat: {\n      src: \'src/css/*.css\', // -> src/css/file1.css, src/css/file2.css\n      dest: \'dest/css/concatenated.css\' // -> dest/css/concatenated.css\n    },\n\n    // if you specify only `src` param, the destination will be set automatically,\n    // so specified source files will be overwrited\n    no_dest: {\n      src: \'dest/css/file.css\' // globbing is also possible here\n    }\n  }\n\n});\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nDmitry/grunt-autoprefixer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     _id: 'grunt-autoprefixer@0.4.1',
+38 silly resolved     _from: 'grunt-autoprefixer@' } ]
+39 info install grunt-autoprefixer@0.4.1 into C:\wamp\www\jarokelo-firefoxapp
+40 info installOne grunt-autoprefixer@0.4.1
+41 info C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer unbuild
+42 info preuninstall grunt-autoprefixer@0.4.1
+43 info uninstall grunt-autoprefixer@0.4.1
+44 verbose true,C:\wamp\www\jarokelo-firefoxapp\node_modules,C:\wamp\www\jarokelo-firefoxapp\node_modules unbuild grunt-autoprefixer@0.4.1
+45 verbose C:\wamp\www\jarokelo-firefoxapp\node_modules\.bin,[object Object] binRoot
+46 info postuninstall grunt-autoprefixer@0.4.1
+47 verbose tar unpack C:\Users\Oli\AppData\Roaming\npm-cache\grunt-autoprefixer\0.4.1\package.tgz
+48 silly lockFile 863b9f35--node-modules-grunt-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+49 verbose lock tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer C:\Users\Oli\AppData\Roaming\npm-cache\863b9f35--node-modules-grunt-autoprefixer.lock
+50 silly lockFile 8a7a5a90-t-autoprefixer-0-4-1-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\grunt-autoprefixer\0.4.1\package.tgz
+51 verbose lock tar://C:\Users\Oli\AppData\Roaming\npm-cache\grunt-autoprefixer\0.4.1\package.tgz C:\Users\Oli\AppData\Roaming\npm-cache\8a7a5a90-t-autoprefixer-0-4-1-package-tgz.lock
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+57 silly gunzTarPerm extractEntry .travis.yml
+58 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+59 silly gunzTarPerm extractEntry LICENSE-MIT
+60 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 438, 420 ]
+61 silly gunzTarPerm extractEntry tasks/autoprefixer.js
+62 silly gunzTarPerm modified mode [ 'tasks/autoprefixer.js', 438, 420 ]
+63 silly lockFile 863b9f35--node-modules-grunt-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+64 silly lockFile 863b9f35--node-modules-grunt-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+65 silly lockFile 8a7a5a90-t-autoprefixer-0-4-1-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\grunt-autoprefixer\0.4.1\package.tgz
+66 silly lockFile 8a7a5a90-t-autoprefixer-0-4-1-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\grunt-autoprefixer\0.4.1\package.tgz
+67 info preinstall grunt-autoprefixer@0.4.1
+68 verbose readDependencies using package.json deps
+69 verbose readDependencies using package.json deps
+70 verbose cache add [ 'autoprefixer@~0.8.20131020', null ]
+71 verbose cache add name=undefined spec="autoprefixer@~0.8.20131020" args=["autoprefixer@~0.8.20131020",null]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: 'autoprefixer@~0.8.20131020',
+72 verbose parsed url   path: 'autoprefixer@~0.8.20131020',
+72 verbose parsed url   href: 'autoprefixer@~0.8.20131020' }
+73 verbose cache add name="autoprefixer" spec="~0.8.20131020" args=["autoprefixer","~0.8.20131020"]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '~0.8.20131020',
+74 verbose parsed url   path: '~0.8.20131020',
+74 verbose parsed url   href: '~0.8.20131020' }
+75 verbose addNamed [ 'autoprefixer', '~0.8.20131020' ]
+76 verbose addNamed [ null, '>=0.8.20131020-0 <0.9.0-0' ]
+77 silly lockFile 1b6fcb77-autoprefixer-0-8-20131020 autoprefixer@~0.8.20131020
+78 verbose lock autoprefixer@~0.8.20131020 C:\Users\Oli\AppData\Roaming\npm-cache\1b6fcb77-autoprefixer-0-8-20131020.lock
+79 silly addNameRange { name: 'autoprefixer',
+79 silly addNameRange   range: '>=0.8.20131020-0 <0.9.0-0',
+79 silly addNameRange   hasData: false }
+80 verbose url raw autoprefixer
+81 verbose url resolving [ 'https://registry.npmjs.org/', './autoprefixer' ]
+82 verbose url resolved https://registry.npmjs.org/autoprefixer
+83 info trying registry request attempt 1 at 23:41:23
+84 verbose etag "E36I89CHOP4WM1RDI2OIKNMX3"
+85 http GET https://registry.npmjs.org/autoprefixer
+86 http 304 https://registry.npmjs.org/autoprefixer
+87 silly registry.get cb [ 304,
+87 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+87 silly registry.get     etag: '"E36I89CHOP4WM1RDI2OIKNMX3"',
+87 silly registry.get     date: 'Wed, 20 Nov 2013 22:41:23 GMT',
+87 silly registry.get     'content-length': '0' } ]
+88 verbose etag autoprefixer from cache
+89 silly addNameRange number 2 { name: 'autoprefixer',
+89 silly addNameRange   range: '>=0.8.20131020-0 <0.9.0-0',
+89 silly addNameRange   hasData: true }
+90 silly addNameRange versions [ 'autoprefixer',
+90 silly addNameRange   [ '0.1.20130409',
+90 silly addNameRange     '0.2.20130413',
+90 silly addNameRange     '0.3.20130423',
+90 silly addNameRange     '0.3.20130424',
+90 silly addNameRange     '0.3.20130427',
+90 silly addNameRange     '0.3.20130502',
+90 silly addNameRange     '0.4.20130507',
+90 silly addNameRange     '0.4.20130515',
+90 silly addNameRange     '0.4.20130521',
+90 silly addNameRange     '0.4.20130524',
+90 silly addNameRange     '0.4.20130528',
+90 silly addNameRange     '0.4.20130530',
+90 silly addNameRange     '0.4.20130603',
+90 silly addNameRange     '0.5.20130615',
+90 silly addNameRange     '0.5.20130616',
+90 silly addNameRange     '0.5.20130617',
+90 silly addNameRange     '0.5.20130625',
+90 silly addNameRange     '0.5.20130626',
+90 silly addNameRange     '0.5.20130629',
+90 silly addNameRange     '0.6.20130716',
+90 silly addNameRange     '0.6.20130721',
+90 silly addNameRange     '0.6.20130728',
+90 silly addNameRange     '0.6.20130729',
+90 silly addNameRange     '0.6.20130730',
+90 silly addNameRange     '0.6.20130731',
+90 silly addNameRange     '0.7.20130805',
+90 silly addNameRange     '0.7.20130806',
+90 silly addNameRange     '0.7.20130807',
+90 silly addNameRange     '0.7.20130808',
+90 silly addNameRange     '0.7.20130810',
+90 silly addNameRange     '0.7.20130824',
+90 silly addNameRange     '0.8.20130902',
+90 silly addNameRange     '0.8.20130903',
+90 silly addNameRange     '0.8.20130906',
+90 silly addNameRange     '0.8.20130911',
+90 silly addNameRange     '0.8.20130919',
+90 silly addNameRange     '0.8.20130923',
+90 silly addNameRange     '0.8.20131001',
+90 silly addNameRange     '0.8.20131006',
+90 silly addNameRange     '0.8.20131007',
+90 silly addNameRange     '0.8.20131009',
+90 silly addNameRange     '0.8.20131015',
+90 silly addNameRange     '0.8.20131017',
+90 silly addNameRange     '0.8.20131020',
+90 silly addNameRange     '0.8.20131029',
+90 silly addNameRange     '0.8.20131104' ] ]
+91 verbose addNamed [ 'autoprefixer', '0.8.20131104' ]
+92 verbose addNamed [ '0.8.20131104', '0.8.20131104' ]
+93 silly lockFile bc3d6317-autoprefixer-0-8-20131104 autoprefixer@0.8.20131104
+94 verbose lock autoprefixer@0.8.20131104 C:\Users\Oli\AppData\Roaming\npm-cache\bc3d6317-autoprefixer-0-8-20131104.lock
+95 silly lockFile bc3d6317-autoprefixer-0-8-20131104 autoprefixer@0.8.20131104
+96 silly lockFile bc3d6317-autoprefixer-0-8-20131104 autoprefixer@0.8.20131104
+97 silly lockFile 1b6fcb77-autoprefixer-0-8-20131020 autoprefixer@~0.8.20131020
+98 silly lockFile 1b6fcb77-autoprefixer-0-8-20131020 autoprefixer@~0.8.20131020
+99 silly resolved [ { name: 'autoprefixer',
+99 silly resolved     version: '0.8.20131104',
+99 silly resolved     description: 'Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website',
+99 silly resolved     keywords: [ 'css', 'prefix', 'rework' ],
+99 silly resolved     author: { name: 'Andrey Sitnik', email: 'andrey@sitnik.ru' },
+99 silly resolved     license: 'LGPL 3',
+99 silly resolved     repository: { type: 'git', url: 'https://github.com/ai/autoprefixer.git' },
+99 silly resolved     dependencies: { 'css-parse': '~> 1.6.0', 'css-stringify': '~> 1.3.2' },
+99 silly resolved     devDependencies:
+99 silly resolved      { 'coffee-script': '1.6.3',
+99 silly resolved        component: '0.18.0',
+99 silly resolved        'fs-extra': '0.8.1',
+99 silly resolved        should: '2.0.2',
+99 silly resolved        stylus: '0.39.4',
+99 silly resolved        rework: '0.18.3',
+99 silly resolved        mocha: '1.14.0',
+99 silly resolved        glob: '3.2.6',
+99 silly resolved        nib: '1.0.1' },
+99 silly resolved     bin: { autoprefixer: './bin/autoprefixer' },
+99 silly resolved     main: 'lib/autoprefixer',
+99 silly resolved     scripts: { test: 'mocha' },
+99 silly resolved     readme: '# Autoprefixer\n\n<img align="right" width="94" src="http://ai.github.io/autoprefixer/logo.svg" title="Autoprefixer logo by Anton Lovchikov">\n\nParse CSS and add vendor prefixes to CSS rules using values\nfrom the [Can I Use](http://caniuse.com/).\n\nWrite your CSS rules without vendor prefixes (in fact, forget about them\nentirely):\n\n```css\n:fullscreen a {\n  transition: transform 1s\n}\n```\n\nProcess your CSS by Autoprefixer:\n\n```js\nvar prefixed = autoprefixer.compile(css);\n```\n\nIt will use the data on current browser popularity and properties support\nto apply prefixes for you:\n\n```css\n:-webkit-full-screen a {\n  -webkit-transition: -webkit-transform 1s;\n  transition: transform 1s;\n}\n\n:-moz-full-screen a {\n  transition: transform 1s;\n}\n\n:fullscreen a {\n  -webkit-transition: -webkit-transform 1s;\n  transition: transform 1s;\n}\n```\n\nTwitter account for news and releases:\n[@autoprefixer](https://twitter.com/autoprefixer).\n\nSponsored by [Evil Martians](http://evilmartians.com/).\n\n## Translations\n\nНа русском: [статья про Автопрефиксер на Хабрахабре](http://habrahabr.ru/company/evilmartians/blog/176909/)\n\n## Features\n\n### Forget about prefixes\n\nThe best tool is a tool you can\'t see that does the work for you.\nThis is the main idea behind Autoprefixer.\n\nAutoprefixer interface is simple: just forget about vendor prefixes\nand write normal CSS according to latest W3C specs. You don’t need\na special language (like Sass) or special mixins.\n\nBecause Autoprefixer is a postprocessor for CSS,\nyou can also use it with preprocessors, such as Sass, Stylus or LESS.\n\n### Actual data from Can I Use\n\nAutoprefixer uses the most recent data from [Can I Use](http://caniuse.com/),\nunderstands which browsers are actual and popular and adds only the necessary\nvendor prefixes.\n\nIt also cleans your CSS from old prefixes (like prefixed `border-radius`,\nproduced by many CSS libraries):\n\n```css\na {\n  -webkit-border-radius: 5px;\n  border-radius: 5px\n}\n```\n\ncompiles to:\n\n```css\na {\n  border-radius: 5px\n}\n```\n\n### Rewrite syntax\n\nFlexbox or gradients have different syntaxes in different browsers\n(sometimes you need to recalculate angles, sometimes you need 2 old properties\ninstead of new one), but Autoprefixer hides this from you.\n\nJust code by latest W3C specs and Autoprefixer will produce the code\nfor old browsers:\n\n```css\na {\n  display: flex;\n}\n```\n\ncompiles to:\n\n```css\na {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex\n}\n```\n\n### Fast\n\nAutoprefixer is about 16 times faster than Compass and 8 times faster\nthan Stylus.\n\nOn a Core i7 with 10 GB of RAM and SSD, benchmark with GitHub styles is:\n\n```\n~/Dev/autoprefixer$ ./node_modules/.bin/cake bench\nLoad GitHub styles\nAutoprefixer: 316 ms\nCompass:      5342 ms (16.9 times slower)\nRework:       249 ms  (1.3 times faster)\nStylus:       2548 ms (8.1 times slower)\n```\n\nUnlike [-prefix-free](http://leaverou.github.io/prefixfree/), Autoprefixer\ncompiles CSS once on deploy and doesn’t hit client-side performance.\n\n## Browsers\n\nYou can specify the browsers you want to target in your project:\n\n```js\nautoprefixer("last 1 version", "> 1%", "ie 8", "ie 7").compile(css);\n```\n\n* `last n versions` is last versions for each browser. Like “last 2 versions”\n  [strategy](http://support.google.com/a/bin/answer.py?answer=33864) in\n  Google.\n* `> n%` is browser versions, selected by global usage statistics.\n* `ff > 20` and `ff >= 20` is Firefox versions newer, that 20.\n* `none` don’t set any browsers to clean CSS from any vendor prefixes.\n* You can also set browsers directly.\n\nBlackberry and stock Android browsers will not be used in `last n versions`.\nYou can add them by name:\n\n```js\nautoprefixer("last 1 version", "bb 10", "android 4").compile(css);\n```\n\nYou can find the browsers codenames in [data file](data/browsers.coffee):\n* `android` for old Android stock browser.\n* `bb` for Blackberry browser.\n* `chrome` for Google Chrome.\n* `ff` for Mozilla Firefox.\n* `ie` for Internet Explorer.\n* `ios` for iOS Safari.\n* `opera` for Opera.\n* `safari` for desktop Safari.\n\nBy default, Autoprefixer uses `> 1%, last 2 versions, ff 17, opera 12.1`:\n* Firefox 17 is a latest [ESR].\n* Opera 12.1 will be in list until Opera supports non-Blink 12.x branch.\n\n[ESR]: http://www.mozilla.org/en/firefox/organizations/faq/\n\n## Inspect\n\nYou can check which browsers are selected and which properties will be prefixed:\n\n```js\ninspect = autoprefixer("last 1 version").inspect();\nconsole.log(inspect);\n```\n\nOr by CLI command:\n\n```sh\nautoprefixer -i\n```\n\n## FAQ\n\n### Does it add polyfills for old browsers?\n\nNo. Autoprefixer only adds prefixes, not polyfills. There are two reasons:\n\n1. Prefixes and polyfills are very different and need a different API.\n   Two separate libraries would be much better.\n2. Most of IE polyfills are very bad for client perfomance. They use slow hacks\n   and old IEs is mostly used on old hardware. Most of CSS 3 features that is\n   only used for styling should be ignored in old IEs as it is recommended in\n   Graceful Degradation.\n\n### Why doesn’t Autoprefixer do anything?\n\nDevelopers are often surprised by how few prefixes are required today.\nIf Autoprefixer doesn’t add prefixes to your CSS, check if they’re still\nrequired on [Can I Use](http://caniuse.com/).\n\nIf a prefix is required, but Autoprefixer doesn’t add it or adds it\nincorrectly, please\n[report an issue](https://github.com/ai/autoprefixer/issues/new)\nand include your source CSS and expected output.\n\n### Does it support source maps?\n\nUnfortunately, right now Autoprefixer doesn’t support source maps.\nHowever, this feature will be included in the next version, 1.0, which is\ncurrently [under development](https://github.com/ai/autoprefixer/tree/v1.0)\nand is planned for release in mid-December 2013.\n\nRight now you can use lydell’s fork with source map support:\n[lydell/autoprefixer](https://github.com/lydell/autoprefixer/tree/source-maps#nodejs).\n\nYou can check the current status of this feature in\n[autoprefixer#37](https://github.com/ai/autoprefixer/issues/37).\n\n### Why Autoprefixer plugin for text editor changed my indents?\n\n[Rework](https://github.com/visionmedia/rework), which Autoprefixer currently\nuses for parsing CSS, doesn’t save indents, because it was created for Grunt\nand other build tools.\n\nIn version 1.0 Autoprefixed will switch to the\n[PostCSS](https://github.com/ai/postcss) parser, which preserves formatting\nof the code.\n\n## Usage\n\n### Ruby on Rails\n\nAdd [autoprefixer-rails](https://github.com/ai/autoprefixer-rails) gem\nto `Gemfile` and write CSS in a usual way:\n\n```ruby\ngem "autoprefixer-rails"\n```\n\n### Middleman\n\nAdd [middleman-autoprefixer](https://github.com/porada/middleman-autoprefixer)\ngem to `Gemfile`:\n\n```ruby\ngem "middleman-autoprefixer"\n```\n\nand activate the extension in your project’s `config.rb`:\n\n```ruby\nactivate :autoprefixer\n```\n\n### Ruby\n\nYou can integrate Autoprefixer into your Sprockets environment\nby `autoprefixer-rails` gem:\n\n```ruby\nAutoprefixerRails.install(sprockets_env)\n```\n\nor process CSS from plain Ruby:\n\n```ruby\nprefixed = AutoprefixerRails.compile(css)\n```\n\n### Grunt\n\nYou can use the\n[grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)\nplugin for Grunt. Install the npm package and add it to Gruntfile:\n\n```js\ngrunt.loadNpmTasks(\'grunt-autoprefixer\');\n```\n\nIf you use Sass with `compress` output style and worry, that Autoprefixer\nuncompress CSS, try [grunt-csso](https://github.com/t32k/grunt-csso).\nIt compress CSS back, but did it much better than Sass.\n\n### Prepros\n\nI you want to build your assets in GUI, try\n[Prepros](http://alphapixels.com/prepros/). Just set “Auto Prefix CSS”\n[checkbox](https://f.cloud.github.com/assets/3478693/930798/faa29892-0016-11e3-8901-87850de7aed2.jpg)\nin right panel.\n\n### Compass\n\nIf you use Compass binary to compile your styles, you can easy integrate\nAutoprefixer with it. Install `autoprefixer-rails` gem:\n\n```\ngem install autoprefixer-rails csso-rails\n```\n\nand add post-compile hook to `config.rb`:\n\n```ruby\nrequire \'autoprefixer-rails\'\nrequire \'csso\'\n\non_stylesheet_saved do |file|\n  css = File.read(file)\n  File.open(file, \'w\') do |io|\n    io << Csso.optimize( AutoprefixerRails.compile(css) )\n  end\nend\n```\n\nIf you use `compress` output style, Autoprefixer will uncompress CSS.\nFor this reason, we use [csso-rails](https://github.com/Vasfed/csso-rails)\nto compress CSS back (it compress much better than Sass).\n\nIf you need uncompressed CSS, remove `Csso.optimize` method call.\n\nYou can set browsers array as second argument in `AutoprefixerRails.compile`.\n\n### Stylus\n\nIf you use Stylus CLI, you can add Autoprefixer by\n[autoprefixer-stylus](https://github.com/jenius/autoprefixer-stylus) plugin.\n\nJust install npm package and use it in `-u` option:\n\n```\nstylus -u autoprefixer-stylus file.css\n```\n\n### Mincer\n\nTo use Autoprefixer in [Mincer](https://github.com/nodeca/mincer),\ninstall `autoprefixer` npm package and enable it:\n\n```js\nenvironment.enable(\'autoprefixer\');\n```\n\n### Node.js\n\nUse `autoprefixer` npm package:\n\n```js\nvar autoprefixer = require(\'autoprefixer\');\nvar prefixed     = autoprefixer.compile(css);\n```\n\n### JavaScript\n\nYou can use Autoprefixer in the browser or a non-Node.js runtime\nwith [standalone version](https://raw.github.com/ai/autoprefixer-rails/master/vendor/autoprefixer.js).\n\n### Rework\n\nAutoprefixer can be also used as a\n[Rework](https://github.com/visionmedia/rework)\nfilter, so you can combine it with other filters:\n\n```js\nrework(css).\n    use( autoprefixer([\'> 1%\', \'opera 12.5\']).rework ).\n    use( rework.references() ).\n    toString();\n```\n\n### PHP\n\nYou can use Autoprefixer in PHP by\n[autoprefixer-php](https://github.com/vladkens/autoprefixer-php) library:\n\n\n```php\n$autoprefixer = new Autoprefixer();\n$css          = \'a { transition: transform 1s }\';\n$prefixed     = $autoprefixer->compile($css);\n```\n\n### Sublime Text\n\nYou can process your styles directly in Sublime Text with the\n[sublime-autoprefixer](https://github.com/sindresorhus/sublime-autoprefixer)\nplugin.\n\n\n### Others\n\nYou can use the `autoprefixer` binary to process CSS files using\nany assets manager:\n\n```\nsudo npm install --global autoprefixer\nautoprefixer *.css\n```\n\nSee `autoprefixer -h` for help.\n\n## In-package Update\n\nIt’s highly recommended that you always use the latest version of Autoprefixer.\nIf by any chance you or your company are not able to update the package\n(e.g. in case of long test periods before any library updates), you can still\nupdate the very browser data that Autoprefixer fetches from Can I Use:\n\n```\nautoprefixer --update\n```\n\nNote that the in-package update doesn’t get any code fixes nor the\nimplementation of new features. It just keeps the browser popularity and\nsupport data up to date, and adds new browser versions.\n',
+99 silly resolved     readmeFilename: 'README.md',
+99 silly resolved     bugs: { url: 'https://github.com/ai/autoprefixer/issues' },
+99 silly resolved     _id: 'autoprefixer@0.8.20131104',
+99 silly resolved     _from: 'autoprefixer@~0.8.20131020' } ]
+100 info install autoprefixer@0.8.20131104 into C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+101 info installOne autoprefixer@0.8.20131104
+102 info C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer unbuild
+103 verbose tar unpack C:\Users\Oli\AppData\Roaming\npm-cache\autoprefixer\0.8.20131104\package.tgz
+104 silly lockFile 8a9c15b7-efixer-node-modules-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+105 verbose lock tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer C:\Users\Oli\AppData\Roaming\npm-cache\8a9c15b7-efixer-node-modules-autoprefixer.lock
+106 silly lockFile b883a3ae-refixer-0-8-20131104-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\autoprefixer\0.8.20131104\package.tgz
+107 verbose lock tar://C:\Users\Oli\AppData\Roaming\npm-cache\autoprefixer\0.8.20131104\package.tgz C:\Users\Oli\AppData\Roaming\npm-cache\b883a3ae-refixer-0-8-20131104-package-tgz.lock
+108 silly gunzTarPerm modes [ '755', '644' ]
+109 silly gunzTarPerm extractEntry package.json
+110 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+113 silly gunzTarPerm extractEntry LICENSE
+114 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+115 silly gunzTarPerm extractEntry bin/autoprefixer
+116 silly gunzTarPerm modified mode [ 'bin/autoprefixer', 438, 420 ]
+117 silly gunzTarPerm extractEntry ChangeLog
+118 silly gunzTarPerm modified mode [ 'ChangeLog', 438, 420 ]
+119 silly gunzTarPerm extractEntry data/browsers.js
+120 silly gunzTarPerm modified mode [ 'data/browsers.js', 438, 420 ]
+121 silly gunzTarPerm extractEntry data/prefixes.js
+122 silly gunzTarPerm modified mode [ 'data/prefixes.js', 438, 420 ]
+123 silly gunzTarPerm extractEntry lib/autoprefixer.js
+124 silly gunzTarPerm modified mode [ 'lib/autoprefixer.js', 438, 420 ]
+125 silly gunzTarPerm extractEntry lib/autoprefixer/binary.js
+126 silly gunzTarPerm modified mode [ 'lib/autoprefixer/binary.js', 438, 420 ]
+127 silly gunzTarPerm extractEntry lib/autoprefixer/utils.js
+128 silly gunzTarPerm modified mode [ 'lib/autoprefixer/utils.js', 438, 420 ]
+129 silly gunzTarPerm extractEntry lib/autoprefixer/inspect.js
+130 silly gunzTarPerm modified mode [ 'lib/autoprefixer/inspect.js', 438, 420 ]
+131 silly gunzTarPerm extractEntry lib/autoprefixer/keyframes.js
+132 silly gunzTarPerm modified mode [ 'lib/autoprefixer/keyframes.js', 438, 420 ]
+133 silly gunzTarPerm extractEntry lib/autoprefixer/declaration.js
+134 silly gunzTarPerm modified mode [ 'lib/autoprefixer/declaration.js', 438, 420 ]
+135 silly gunzTarPerm extractEntry lib/autoprefixer/browsers.js
+136 silly gunzTarPerm modified mode [ 'lib/autoprefixer/browsers.js', 438, 420 ]
+137 silly gunzTarPerm extractEntry lib/autoprefixer/processor.js
+138 silly gunzTarPerm modified mode [ 'lib/autoprefixer/processor.js', 438, 420 ]
+139 silly gunzTarPerm extractEntry lib/autoprefixer/rule.js
+140 silly gunzTarPerm modified mode [ 'lib/autoprefixer/rule.js', 438, 420 ]
+141 silly gunzTarPerm extractEntry lib/autoprefixer/rules.js
+142 silly gunzTarPerm modified mode [ 'lib/autoprefixer/rules.js', 438, 420 ]
+143 silly gunzTarPerm extractEntry lib/autoprefixer/selector.js
+144 silly gunzTarPerm modified mode [ 'lib/autoprefixer/selector.js', 438, 420 ]
+145 silly gunzTarPerm extractEntry lib/autoprefixer/css.js
+146 silly gunzTarPerm modified mode [ 'lib/autoprefixer/css.js', 438, 420 ]
+147 silly gunzTarPerm extractEntry lib/autoprefixer/updater.js
+148 silly gunzTarPerm modified mode [ 'lib/autoprefixer/updater.js', 438, 420 ]
+149 silly gunzTarPerm extractEntry lib/autoprefixer/old-value.js
+150 silly gunzTarPerm modified mode [ 'lib/autoprefixer/old-value.js', 438, 420 ]
+151 silly gunzTarPerm extractEntry lib/autoprefixer/value.js
+152 silly gunzTarPerm modified mode [ 'lib/autoprefixer/value.js', 438, 420 ]
+153 silly gunzTarPerm extractEntry lib/autoprefixer/prefixes.js
+154 silly gunzTarPerm modified mode [ 'lib/autoprefixer/prefixes.js', 438, 420 ]
+155 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/align-content.js
+156 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/align-content.js', 438, 420 ]
+157 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/filter.js
+158 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/filter.js', 438, 420 ]
+159 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-basis.js
+160 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-basis.js', 438, 420 ]
+161 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-declaration.js
+162 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-declaration.js', 438, 420 ]
+163 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-direction.js
+164 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-direction.js', 438, 420 ]
+165 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/fill-available.js
+166 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/fill-available.js', 438, 420 ]
+167 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-grow.js
+168 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-grow.js', 438, 420 ]
+169 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-shrink.js
+170 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-shrink.js', 438, 420 ]
+171 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-wrap.js
+172 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-wrap.js', 438, 420 ]
+173 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex.js
+174 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex.js', 438, 420 ]
+175 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/fullscreen.js
+176 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/fullscreen.js', 438, 420 ]
+177 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/display-flex.js
+178 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/display-flex.js', 438, 420 ]
+179 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/gradient.js
+180 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/gradient.js', 438, 420 ]
+181 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/border-radius.js
+182 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/border-radius.js', 438, 420 ]
+183 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/justify-content.js
+184 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/justify-content.js', 438, 420 ]
+185 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/border-image.js
+186 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/border-image.js', 438, 420 ]
+187 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/order.js
+188 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/order.js', 438, 420 ]
+189 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/align-self.js
+190 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/align-self.js', 438, 420 ]
+191 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/placeholder.js
+192 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/placeholder.js', 438, 420 ]
+193 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/align-items.js
+194 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/align-items.js', 438, 420 ]
+195 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/transition.js
+196 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/transition.js', 438, 420 ]
+197 silly gunzTarPerm extractEntry lib/autoprefixer/hacks/flex-flow.js
+198 silly gunzTarPerm modified mode [ 'lib/autoprefixer/hacks/flex-flow.js', 438, 420 ]
+199 silly gunzTarPerm extractEntry updaters/browsers.js
+200 silly gunzTarPerm modified mode [ 'updaters/browsers.js', 438, 420 ]
+201 silly gunzTarPerm extractEntry updaters/prefixes.js
+202 silly gunzTarPerm modified mode [ 'updaters/prefixes.js', 438, 420 ]
+203 silly lockFile 8a9c15b7-efixer-node-modules-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+204 silly lockFile 8a9c15b7-efixer-node-modules-autoprefixer tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+205 silly lockFile b883a3ae-refixer-0-8-20131104-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\autoprefixer\0.8.20131104\package.tgz
+206 silly lockFile b883a3ae-refixer-0-8-20131104-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\autoprefixer\0.8.20131104\package.tgz
+207 info preinstall autoprefixer@0.8.20131104
+208 verbose readDependencies using package.json deps
+209 verbose readDependencies using package.json deps
+210 verbose cache add [ 'css-parse@~> 1.6.0', null ]
+211 verbose cache add name=undefined spec="css-parse@~> 1.6.0" args=["css-parse@~> 1.6.0",null]
+212 verbose parsed url { protocol: null,
+212 verbose parsed url   slashes: null,
+212 verbose parsed url   auth: null,
+212 verbose parsed url   host: null,
+212 verbose parsed url   port: null,
+212 verbose parsed url   hostname: null,
+212 verbose parsed url   hash: null,
+212 verbose parsed url   search: null,
+212 verbose parsed url   query: null,
+212 verbose parsed url   pathname: 'css-parse@~%3E%201.6.0',
+212 verbose parsed url   path: 'css-parse@~%3E%201.6.0',
+212 verbose parsed url   href: 'css-parse@~%3E%201.6.0' }
+213 verbose cache add name="css-parse" spec="~> 1.6.0" args=["css-parse","~> 1.6.0"]
+214 verbose parsed url { protocol: null,
+214 verbose parsed url   slashes: null,
+214 verbose parsed url   auth: null,
+214 verbose parsed url   host: null,
+214 verbose parsed url   port: null,
+214 verbose parsed url   hostname: null,
+214 verbose parsed url   hash: null,
+214 verbose parsed url   search: null,
+214 verbose parsed url   query: null,
+214 verbose parsed url   pathname: '~%3E%201.6.0',
+214 verbose parsed url   path: '~%3E%201.6.0',
+214 verbose parsed url   href: '~%3E%201.6.0' }
+215 verbose addNamed [ 'css-parse', '~> 1.6.0' ]
+216 verbose addNamed [ null, '>=1.6.0-0 <1.7.0-0' ]
+217 silly lockFile 26fb2221-css-parse-1-6-0 css-parse@~> 1.6.0
+218 verbose lock css-parse@~> 1.6.0 C:\Users\Oli\AppData\Roaming\npm-cache\26fb2221-css-parse-1-6-0.lock
+219 verbose cache add [ 'css-stringify@~> 1.3.2', null ]
+220 verbose cache add name=undefined spec="css-stringify@~> 1.3.2" args=["css-stringify@~> 1.3.2",null]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: 'css-stringify@~%3E%201.3.2',
+221 verbose parsed url   path: 'css-stringify@~%3E%201.3.2',
+221 verbose parsed url   href: 'css-stringify@~%3E%201.3.2' }
+222 verbose cache add name="css-stringify" spec="~> 1.3.2" args=["css-stringify","~> 1.3.2"]
+223 verbose parsed url { protocol: null,
+223 verbose parsed url   slashes: null,
+223 verbose parsed url   auth: null,
+223 verbose parsed url   host: null,
+223 verbose parsed url   port: null,
+223 verbose parsed url   hostname: null,
+223 verbose parsed url   hash: null,
+223 verbose parsed url   search: null,
+223 verbose parsed url   query: null,
+223 verbose parsed url   pathname: '~%3E%201.3.2',
+223 verbose parsed url   path: '~%3E%201.3.2',
+223 verbose parsed url   href: '~%3E%201.3.2' }
+224 verbose addNamed [ 'css-stringify', '~> 1.3.2' ]
+225 verbose addNamed [ null, '>=1.3.2-0 <1.4.0-0' ]
+226 silly lockFile 7e12548c-css-stringify-1-3-2 css-stringify@~> 1.3.2
+227 verbose lock css-stringify@~> 1.3.2 C:\Users\Oli\AppData\Roaming\npm-cache\7e12548c-css-stringify-1-3-2.lock
+228 silly addNameRange { name: 'css-stringify',
+228 silly addNameRange   range: '>=1.3.2-0 <1.4.0-0',
+228 silly addNameRange   hasData: false }
+229 silly addNameRange { name: 'css-parse',
+229 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+229 silly addNameRange   hasData: false }
+230 verbose url raw css-stringify
+231 verbose url resolving [ 'https://registry.npmjs.org/', './css-stringify' ]
+232 verbose url resolved https://registry.npmjs.org/css-stringify
+233 info trying registry request attempt 1 at 23:41:25
+234 verbose etag "846YUMEA5D4Q7TWW0FD081ME0"
+235 http GET https://registry.npmjs.org/css-stringify
+236 verbose url raw css-parse
+237 verbose url resolving [ 'https://registry.npmjs.org/', './css-parse' ]
+238 verbose url resolved https://registry.npmjs.org/css-parse
+239 info trying registry request attempt 1 at 23:41:25
+240 verbose etag "BWZ3OXCKJOVKN68V13YU3L3OK"
+241 http GET https://registry.npmjs.org/css-parse
+242 http 304 https://registry.npmjs.org/css-parse
+243 silly registry.get cb [ 304,
+243 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+243 silly registry.get     etag: '"BWZ3OXCKJOVKN68V13YU3L3OK"',
+243 silly registry.get     date: 'Wed, 20 Nov 2013 22:41:25 GMT',
+243 silly registry.get     'content-length': '0' } ]
+244 verbose etag css-parse from cache
+245 silly addNameRange number 2 { name: 'css-parse', range: '>=1.6.0-0 <1.7.0-0', hasData: true }
+246 silly addNameRange versions [ 'css-parse',
+246 silly addNameRange   [ '1.0.0',
+246 silly addNameRange     '1.0.1',
+246 silly addNameRange     '1.0.2',
+246 silly addNameRange     '1.0.3',
+246 silly addNameRange     '1.0.4',
+246 silly addNameRange     '1.1.0',
+246 silly addNameRange     '1.2.0',
+246 silly addNameRange     '1.3.0',
+246 silly addNameRange     '1.4.0',
+246 silly addNameRange     '1.5.0',
+246 silly addNameRange     '1.5.1',
+246 silly addNameRange     '1.5.2',
+246 silly addNameRange     '1.5.3',
+246 silly addNameRange     '1.6.0' ] ]
+247 verbose addNamed [ 'css-parse', '1.6.0' ]
+248 verbose addNamed [ '1.6.0', '1.6.0' ]
+249 silly lockFile a81eb874-css-parse-1-6-0 css-parse@1.6.0
+250 verbose lock css-parse@1.6.0 C:\Users\Oli\AppData\Roaming\npm-cache\a81eb874-css-parse-1-6-0.lock
+251 silly lockFile a81eb874-css-parse-1-6-0 css-parse@1.6.0
+252 silly lockFile a81eb874-css-parse-1-6-0 css-parse@1.6.0
+253 silly lockFile 26fb2221-css-parse-1-6-0 css-parse@~> 1.6.0
+254 silly lockFile 26fb2221-css-parse-1-6-0 css-parse@~> 1.6.0
+255 http 304 https://registry.npmjs.org/css-stringify
+256 silly registry.get cb [ 304,
+256 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+256 silly registry.get     etag: '"846YUMEA5D4Q7TWW0FD081ME0"',
+256 silly registry.get     date: 'Wed, 20 Nov 2013 22:41:25 GMT',
+256 silly registry.get     'content-length': '0' } ]
+257 verbose etag css-stringify from cache
+258 silly addNameRange number 2 { name: 'css-stringify',
+258 silly addNameRange   range: '>=1.3.2-0 <1.4.0-0',
+258 silly addNameRange   hasData: true }
+259 silly addNameRange versions [ 'css-stringify',
+259 silly addNameRange   [ '1.0.0',
+259 silly addNameRange     '1.0.1',
+259 silly addNameRange     '1.0.2',
+259 silly addNameRange     '1.0.3',
+259 silly addNameRange     '1.0.4',
+259 silly addNameRange     '1.0.5',
+259 silly addNameRange     '1.1.0',
+259 silly addNameRange     '1.2.0',
+259 silly addNameRange     '1.3.0',
+259 silly addNameRange     '1.3.1',
+259 silly addNameRange     '1.3.2' ] ]
+260 verbose addNamed [ 'css-stringify', '1.3.2' ]
+261 verbose addNamed [ '1.3.2', '1.3.2' ]
+262 silly lockFile de049e47-css-stringify-1-3-2 css-stringify@1.3.2
+263 verbose lock css-stringify@1.3.2 C:\Users\Oli\AppData\Roaming\npm-cache\de049e47-css-stringify-1-3-2.lock
+264 silly lockFile de049e47-css-stringify-1-3-2 css-stringify@1.3.2
+265 silly lockFile de049e47-css-stringify-1-3-2 css-stringify@1.3.2
+266 silly lockFile 7e12548c-css-stringify-1-3-2 css-stringify@~> 1.3.2
+267 silly lockFile 7e12548c-css-stringify-1-3-2 css-stringify@~> 1.3.2
+268 silly resolved [ { name: 'css-parse',
+268 silly resolved     version: '1.6.0',
+268 silly resolved     description: 'CSS parser',
+268 silly resolved     keywords: [ 'css', 'parser', 'stylesheet' ],
+268 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+268 silly resolved     license: 'MIT',
+268 silly resolved     devDependencies: { mocha: '*', should: '*', matcha: '~0.4.0', bytes: '~0.2.1' },
+268 silly resolved     main: 'index',
+268 silly resolved     repository:
+268 silly resolved      { type: 'git',
+268 silly resolved        url: 'https://github.com/visionmedia/css-parse.git' },
+268 silly resolved     scripts: { test: 'make test' },
+268 silly resolved     files: [ 'index.js' ],
+268 silly resolved     readme: '\n# css-parse\n\n  JavaScript CSS parser for nodejs and the browser.\n\n## Example\n\ncss:\n\n```css\nbody {\n  background: #eee;\n  color: #888;\n}\n```\n\nparse tree:\n\n```json\n{\n  "type": "stylesheet",\n  "stylesheet": {\n    "rules": [\n      {\n        "type": "rule",\n        "selectors": [\n          "body"\n        ],\n        "declarations": [\n          {\n            "type": "declaration",\n            "property": "background",\n            "value": "#eee"\n          },\n          {\n            "type": "declaration",\n            "property": "color",\n            "value": "#888"\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\nparse tree with `.position` enabled:\n\n```json\n{\n  "type": "stylesheet",\n  "stylesheet": {\n    "rules": [\n      {\n        "type": "rule",\n        "selectors": [\n          "body"\n        ],\n        "declarations": [\n          {\n            "type": "declaration",\n            "property": "background",\n            "value": "#eee",\n            "position": {\n              "start": {\n                "line": 3,\n                "column": 3\n              },\n              "end": {\n                "line": 3,\n                "column": 19\n              }\n            }\n          },\n          {\n            "type": "declaration",\n            "property": "color",\n            "value": "#888",\n            "position": {\n              "start": {\n                "line": 4,\n                "column": 3\n              },\n              "end": {\n                "line": 4,\n                "column": 14\n              }\n            }\n          }\n        ],\n        "position": {\n          "start": {\n            "line": 2,\n            "column": 1\n          },\n          "end": {\n            "line": 5,\n            "column": 2\n          }\n        }\n      }\n    ]\n  }\n}\n```\n\nIf you also pass in `source: \'path/to/original.css\'`, that will be set\non `node.position.source`.\n\n## Performance\n\n  Parsed 15,000 lines of CSS (2mb) in 40ms on my macbook air.\n\n## License\n\n  MIT\n',
+268 silly resolved     readmeFilename: 'Readme.md',
+268 silly resolved     bugs: { url: 'https://github.com/visionmedia/css-parse/issues' },
+268 silly resolved     _id: 'css-parse@1.6.0',
+268 silly resolved     _from: 'css-parse@~> 1.6.0' },
+268 silly resolved   { name: 'css-stringify',
+268 silly resolved     version: '1.3.2',
+268 silly resolved     description: 'CSS compiler',
+268 silly resolved     keywords: [ 'css', 'stringify', 'stylesheet' ],
+268 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+268 silly resolved     devDependencies: { mocha: '*', should: '*', 'css-parse': '1.4.0' },
+268 silly resolved     main: 'index',
+268 silly resolved     repository:
+268 silly resolved      { type: 'git',
+268 silly resolved        url: 'https://github.com/visionmedia/css-stringify.git' },
+268 silly resolved     scripts: { test: 'make test' },
+268 silly resolved     readme: '# css-stringify [![Build Status](https://travis-ci.org/visionmedia/css-stringify.png)](https://travis-ci.org/visionmedia/css-stringify)\n\n  CSS compiler using the AST provided by [css-parse](https://github.com/visionmedia/css-parse).\n\n## Performance\n\n  Formats 15,000 lines of CSS (2mb) in 23ms on my macbook air.\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+268 silly resolved     readmeFilename: 'Readme.md',
+268 silly resolved     bugs: { url: 'https://github.com/visionmedia/css-stringify/issues' },
+268 silly resolved     _id: 'css-stringify@1.3.2',
+268 silly resolved     _from: 'css-stringify@~> 1.3.2' } ]
+269 info install css-parse@1.6.0 into C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+270 info install css-stringify@1.3.2 into C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+271 info installOne css-parse@1.6.0
+272 info installOne css-stringify@1.3.2
+273 info C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse unbuild
+274 info C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify unbuild
+275 verbose tar unpack C:\Users\Oli\AppData\Roaming\npm-cache\css-parse\1.6.0\package.tgz
+276 silly lockFile 3b57a31f-oprefixer-node-modules-css-parse tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse
+277 verbose lock tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse C:\Users\Oli\AppData\Roaming\npm-cache\3b57a31f-oprefixer-node-modules-css-parse.lock
+278 silly lockFile d2d0017f-ache-css-parse-1-6-0-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-parse\1.6.0\package.tgz
+279 verbose lock tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-parse\1.6.0\package.tgz C:\Users\Oli\AppData\Roaming\npm-cache\d2d0017f-ache-css-parse-1-6-0-package-tgz.lock
+280 verbose tar unpack C:\Users\Oli\AppData\Roaming\npm-cache\css-stringify\1.3.2\package.tgz
+281 silly lockFile 3ec0fa1e-fixer-node-modules-css-stringify tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify
+282 verbose lock tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify C:\Users\Oli\AppData\Roaming\npm-cache\3ec0fa1e-fixer-node-modules-css-stringify.lock
+283 silly lockFile 21b4f95f--css-stringify-1-3-2-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-stringify\1.3.2\package.tgz
+284 verbose lock tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-stringify\1.3.2\package.tgz C:\Users\Oli\AppData\Roaming\npm-cache\21b4f95f--css-stringify-1-3-2-package-tgz.lock
+285 silly gunzTarPerm modes [ '755', '644' ]
+286 silly gunzTarPerm extractEntry package.json
+287 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+288 silly gunzTarPerm extractEntry .npmignore
+289 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+290 silly gunzTarPerm extractEntry LICENSE
+291 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+292 silly gunzTarPerm extractEntry index.js
+293 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+294 silly gunzTarPerm extractEntry .travis.yml
+295 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+296 silly gunzTarPerm extractEntry component.json
+297 silly gunzTarPerm modified mode [ 'component.json', 438, 420 ]
+298 silly gunzTarPerm extractEntry History.md
+299 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+300 silly gunzTarPerm modes [ '755', '644' ]
+301 silly gunzTarPerm extractEntry package.json
+302 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+303 silly gunzTarPerm extractEntry lib/compress.js
+304 silly gunzTarPerm modified mode [ 'lib/compress.js', 438, 420 ]
+305 silly gunzTarPerm extractEntry lib/identity.js
+306 silly gunzTarPerm modified mode [ 'lib/identity.js', 438, 420 ]
+307 silly gunzTarPerm extractEntry index.js
+308 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+309 silly gunzTarPerm extractEntry Readme.md
+310 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+311 silly gunzTarPerm extractEntry Makefile
+312 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+313 silly gunzTarPerm extractEntry Readme.md
+314 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+315 silly lockFile 3b57a31f-oprefixer-node-modules-css-parse tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse
+316 silly lockFile 3b57a31f-oprefixer-node-modules-css-parse tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse
+317 silly lockFile d2d0017f-ache-css-parse-1-6-0-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-parse\1.6.0\package.tgz
+318 silly lockFile d2d0017f-ache-css-parse-1-6-0-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-parse\1.6.0\package.tgz
+319 info preinstall css-parse@1.6.0
+320 verbose readDependencies using package.json deps
+321 verbose readDependencies using package.json deps
+322 silly resolved []
+323 verbose about to build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse
+324 info build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-parse
+325 verbose linkStuff [ false,
+325 verbose linkStuff   false,
+325 verbose linkStuff   false,
+325 verbose linkStuff   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules\\grunt-autoprefixer\\node_modules\\autoprefixer\\node_modules' ]
+326 info linkStuff css-parse@1.6.0
+327 verbose linkBins css-parse@1.6.0
+328 verbose linkMans css-parse@1.6.0
+329 verbose rebuildBundles css-parse@1.6.0
+330 info install css-parse@1.6.0
+331 info postinstall css-parse@1.6.0
+332 silly lockFile 3ec0fa1e-fixer-node-modules-css-stringify tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify
+333 silly lockFile 3ec0fa1e-fixer-node-modules-css-stringify tar://C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify
+334 silly lockFile 21b4f95f--css-stringify-1-3-2-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-stringify\1.3.2\package.tgz
+335 silly lockFile 21b4f95f--css-stringify-1-3-2-package-tgz tar://C:\Users\Oli\AppData\Roaming\npm-cache\css-stringify\1.3.2\package.tgz
+336 info preinstall css-stringify@1.3.2
+337 verbose readDependencies using package.json deps
+338 verbose readDependencies using package.json deps
+339 silly resolved []
+340 verbose about to build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify
+341 info build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer\node_modules\css-stringify
+342 verbose linkStuff [ false,
+342 verbose linkStuff   false,
+342 verbose linkStuff   false,
+342 verbose linkStuff   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules\\grunt-autoprefixer\\node_modules\\autoprefixer\\node_modules' ]
+343 info linkStuff css-stringify@1.3.2
+344 verbose linkBins css-stringify@1.3.2
+345 verbose linkMans css-stringify@1.3.2
+346 verbose rebuildBundles css-stringify@1.3.2
+347 info install css-stringify@1.3.2
+348 info postinstall css-stringify@1.3.2
+349 verbose about to build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+350 info build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer\node_modules\autoprefixer
+351 verbose linkStuff [ false,
+351 verbose linkStuff   false,
+351 verbose linkStuff   false,
+351 verbose linkStuff   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules\\grunt-autoprefixer\\node_modules' ]
+352 info linkStuff autoprefixer@0.8.20131104
+353 verbose linkBins autoprefixer@0.8.20131104
+354 verbose link bins [ { autoprefixer: './bin/autoprefixer' },
+354 verbose link bins   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules\\grunt-autoprefixer\\node_modules\\.bin',
+354 verbose link bins   false ]
+355 verbose linkMans autoprefixer@0.8.20131104
+356 verbose rebuildBundles autoprefixer@0.8.20131104
+357 verbose rebuildBundles [ 'css-parse', 'css-stringify' ]
+358 info install autoprefixer@0.8.20131104
+359 info postinstall autoprefixer@0.8.20131104
+360 verbose about to build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+361 info build C:\wamp\www\jarokelo-firefoxapp\node_modules\grunt-autoprefixer
+362 verbose linkStuff [ false,
+362 verbose linkStuff   false,
+362 verbose linkStuff   false,
+362 verbose linkStuff   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules' ]
+363 info linkStuff grunt-autoprefixer@0.4.1
+364 verbose linkBins grunt-autoprefixer@0.4.1
+365 verbose link bins [ { autoprefixer: './node_modules/autoprefixer/bin/autoprefixer' },
+365 verbose link bins   'C:\\wamp\\www\\jarokelo-firefoxapp\\node_modules\\.bin',
+365 verbose link bins   false ]
+366 verbose linkMans grunt-autoprefixer@0.4.1
+367 verbose rebuildBundles grunt-autoprefixer@0.4.1
+368 verbose rebuildBundles [ '.bin', 'autoprefixer' ]
+369 info install grunt-autoprefixer@0.4.1
+370 info postinstall grunt-autoprefixer@0.4.1
+371 verbose unsafe-perm in lifecycle true
+372 error Error: spawn ENOENT
+372 error     at errnoException (child_process.js:980:11)
+372 error     at Process.ChildProcess._handle.onexit (child_process.js:771:34)
+373 error If you need help, you may report this log at:
+373 error     <http://github.com/isaacs/npm/issues>
+373 error or email it to:
+373 error     <npm-@googlegroups.com>
+374 error System Windows_NT 6.1.7601
+375 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-autoprefixer" "--save"
+376 error cwd C:\wamp\www\jarokelo-firefoxapp
+377 error node -v v0.10.20
+378 error npm -v 1.3.11
+379 error syscall spawn
+380 error code ENOENT
+381 error errno ENOENT
+382 verbose exit [ 1, true ]

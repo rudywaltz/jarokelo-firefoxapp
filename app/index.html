@@ -4,7 +4,7 @@
   <title>Járókelő.hu</title>
   <meta charset="utf-8">
   <link href="/bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="/styles/gaiabb/all.css" rel="stylesheet" type="text/css">
+  <!-- <link href="/styles/gaiabb/all.css" rel="stylesheet" type="text/css"> -->
   <link href="/styles/main.css" rel="stylesheet" type="text/css">	
    <!-- build:js scripts/angular.js -->
 
@@ -25,18 +25,18 @@
     <script src="scripts/controllers/report.js"></script>
     <!-- endbuild -->
 </head>
-<body>
+<body role="application">
  <section role="region">
         <header>
-            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
             <div id="online-status" title="Online"></div>
             <menu type="toolbar" ng-controller="TranslateCtrl">
 						  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
 						  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
             </menu>
             <h1>
-               <a href="/">{{ 'HEADLINE' | translate }}</a>
+               <a href="/" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
             </h1>
+             <button class="menu-toggle"><span class="icon icon-menu">menu</span></button>
         </header>
     </section>
 
