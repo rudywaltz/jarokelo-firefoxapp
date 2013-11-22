@@ -23,7 +23,7 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
       controller: 'ListCtrl'
     })
     .state('report', {
-      url: '/report',
+      url: '/report/',
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
     });
