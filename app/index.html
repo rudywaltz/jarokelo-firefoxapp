@@ -28,18 +28,18 @@
 </head>
 <body role="application">
  <section role="region">
-        <header>
-            <div id="online-status" title="Online"></div>
-            <menu type="toolbar" ng-controller="TranslateCtrl">
-						  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
-						  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
-            </menu>
-            <h1>
-               <a href="#/home" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
-            </h1>
-             <button class="menu-toggle"><span class="icon icon-menu">menu</span></button>
-        </header>
-    </section>
+    <header>
+        <!-- <div id="online-status" title="Online"></div>
+        <menu type="toolbar" ng-controller="TranslateCtrl">
+				  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
+				  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
+        </menu> -->
+        <h1>
+           <a href="#/home" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
+        </h1>
+        <button class="menu-toggle icon-menu"></button>
+    </header>
+</section>
 
     <div id="main" ui-view="">
    </div>  

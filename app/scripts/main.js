@@ -46,7 +46,7 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Válasszon egy lehetőséget',
       CITY: 'Város',
       REPORT: 'Bejelentés',
-      LIST_VIEW: 'lista nézet'
+      LIST_VIEW: 'legfrisebb bejelentések'
     });
     $translateProvider.preferredLanguage('hu');
   }]);
