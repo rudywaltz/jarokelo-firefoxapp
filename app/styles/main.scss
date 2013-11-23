@@ -5,6 +5,7 @@
 *{
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
+  outline: none;
 }
 .group:after {
   content: "";
@@ -76,6 +77,7 @@ header {
   	border-width: 0;
   }
   .menu-toggle{
+    display: inline-block;
   	right: 0;
   	position: absolute;
   	top: 0;
@@ -83,6 +85,16 @@ header {
     height: 100%;
     font-size: 2.8rem;
     color: #314D54;
+    background: none;
+    border: none;
+
+    &:after {
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+      content: "";
+    }
 
     &:hover, &:active {
       background: #89C4D3;
@@ -159,15 +171,19 @@ header {
       &.info {
         padding-top: 20px;
         width: 100%;
-        color: $main-text;
+        
 
-        .title {
+        a .title {
             margin-bottom: 1rem;
             font-size: 2rem;
+            color: $main-text !important;
+        text-decoration: none !important;
         }
 
-        .desc {
+        a .desc {
           font-size: 1rem;
+          color: $main-text !important;
+        text-decoration: none !important;
         }
       }
     }
