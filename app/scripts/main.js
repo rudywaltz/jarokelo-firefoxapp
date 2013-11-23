@@ -2,7 +2,7 @@
 'use strict';
 
 var jarokelo = angular.module('jarokeloApp', ['ui.router',
- 'pascalprecht.translate', 'configuration']);
+ 'pascalprecht.translate', 'configuration', 'google-maps']);
 
 jarokelo.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
@@ -31,6 +31,11 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
       url: '/report/:reportId',
       templateUrl: 'views/report.details.html',
       controller: 'ReportDetailsCtrl'
+    })
+    .state('maps', {
+      url: '/maps',
+      templateUrl: 'views/maps.html',
+      controller: 'MapsCtrl'
     });
 });
 
@@ -51,7 +56,7 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Válasszon egy lehetőséget',
       CITY: 'Város',
       REPORT: 'Bejelentés',
-      LIST_VIEW: 'legfrisebb bejelentések'
+      LIST_VIEW: 'Legfrisebb bejelentések'
     });
     $translateProvider.preferredLanguage('hu');
   }]);

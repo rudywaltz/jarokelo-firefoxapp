@@ -8,11 +8,14 @@
   <link href="/styles/main.css" rel="stylesheet" type="text/css">	
    <!-- build:js scripts/angular.js -->
 
+   <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+
 		<!-- build:js scripts/vendor.js -->
    <!-- bower:js -->
    <script src="/bower_components/angular/angular.js"></script>
    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
    <script src="/bower_components/angular-translate/angular-translate.js"></script>
+   <script src="/bower_components/angular-google-maps/src/angular-google-maps.js"></script>
    <!-- endbower -->
     <!-- endbuild -->
 
@@ -25,6 +28,7 @@
       <script src="scripts/controllers/report.js"></script>
       <script src="scripts/directives/status.js"></script>
     <script src="scripts/controllers/reportDetails.js"></script>
+    <script src="scripts/controllers/maps.js"></script>
     <!-- endbuild -->
 </head>
 <body role="application">
