@@ -151,6 +151,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: 'app',
           src: [
+            'bower_components/normalize-css/*.css',
             'styles/**/*.css',
             '!styles/gaiabb/**/*.css',
             'styles/gaiabb/all.css',
