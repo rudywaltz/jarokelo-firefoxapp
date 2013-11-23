@@ -27,13 +27,10 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
     })
-    .state('report.reportDetails', {
+    .state('reportDetails', {
       url: '/report/:reportId',
       templateUrl: 'views/report.details.html',
-      controller: function ($stateParams) {
-            // If we got here from a url of /contacts/42
-            expect($stateParams).toBe({contactId: 42});
-          }
+      controller: 'ReportDetailsCtrl'
     });
 });
 
