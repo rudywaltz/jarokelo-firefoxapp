@@ -17,34 +17,33 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/angular.js -->
-    <script src="/scripts/main.js"></script>
-    <script src="/scripts/config.js"></script>
-	  <script src="scripts/controllers/translate.js"></script>
-    <script src="scripts/controllers/city.js"></script>
-    <script src="scripts/controllers/list.js"></script>
-    <script src="scripts/controllers/report.js"></script>
-    <script src="scripts/directives/status.js"></script>
-    <script src="scripts/services/reload.js"></script>
+      <script src="scripts/main.js"></script>
+      <script src="scripts/config.js"></script>
+  	  <script src="scripts/controllers/translate.js"></script>
+      <script src="scripts/controllers/city.js"></script>
+      <script src="scripts/controllers/list.js"></script>
+      <script src="scripts/controllers/report.js"></script>
+      <script src="scripts/directives/status.js"></script>
     <!-- endbuild -->
 </head>
 <body role="application">
  <section role="region">
-        <header>
-            <div id="online-status" title="Online"></div>
-            <menu type="toolbar" ng-controller="TranslateCtrl">
-						  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
-						  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
-            </menu>
-            <h1>
-               <a href="#/home" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
-            </h1>
-             <button class="menu-toggle"><span class="icon icon-menu">menu</span></button>
-        </header>
-    </section>
+    <header>
+        <!-- <div id="online-status" title="Online"></div>
+        <menu type="toolbar" ng-controller="TranslateCtrl">
+				  <button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
+				  <button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
+        </menu> -->
+        <h1>
+           <a href="#/home" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
+        </h1>
+        <button class="menu-toggle icon-menu"></button>
+    </header>
+</section>
 
     <div id="main" ui-view="">
-   </div>    
-  <a href="" ng-click="reload()">frissítés</div>  
+   </div>  
+   
 </body>
 </html>
 

@@ -157,6 +157,7 @@ module.exports = function (grunt) {
             'styles/gaiabb/all.css',
             'styles/gaiabb/**/*.{png,gif,jpg,jpeg,svg}',
             'scripts/**/*.js',
+            'fonts/*.woff',
             'bower_components/angular/*.*',
             'bower_components/angular-translate/*.*',
             'bower_components/angular-ui-router/release/*.*',

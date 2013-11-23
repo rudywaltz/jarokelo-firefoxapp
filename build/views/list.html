@@ -1,9 +1,17 @@
-<h1>{{ 'LIST_VIEW' | translate }}</h1>
+<h2>{{ 'LIST_VIEW' | translate }}</h2>
 
-<div>
-	<ul ng-repeat="report in list">
-		<li><a ng-href="#/list/{{report.id}}">{{report.nadpis}} {{report.status_id}}<br><small>url: {{ report.detail_url }}</small></a></li>
-		<li><img ng-src="http://www.sandbox.odkazprestarostu.sk/{{report.image}}" alt=""></li>
-	</ul>
-
+<div class="full-list">
+	<div ng-repeat="report in list">
+		<a ng-href="#/list/{{report.id}}">
+			<ul>
+				<li class="pic">
+					<img ng-src="http://www.sandbox.odkazprestarostu.sk/{{report.image}}" alt="">
+					<div class="status status-{{report.status_id}}"></div>
+				</li><li class="info">
+				<div class="title">{{report.nadpis}}</div>
+				<div class="dec">{{report.popis}}</div>
+				</li>
+			</ul>
+		</a>
+	</div>
 </div>
