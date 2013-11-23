@@ -26,6 +26,11 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
       url: '/report',
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
+    })
+    .state('reportDetails', {
+      url: '/report/:reportId',
+      templateUrl: 'views/report.details.html',
+      controller: 'ReportDetailsCtrl'
     });
 });
 
@@ -46,7 +51,7 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Válasszon egy lehetőséget',
       CITY: 'Város',
       REPORT: 'Bejelentés',
-      LIST_VIEW: 'legfrisebb bejelentések'
+      LIST_VIEW: 'Legfrisebb bejelentések'
     });
     $translateProvider.preferredLanguage('hu');
   }]);

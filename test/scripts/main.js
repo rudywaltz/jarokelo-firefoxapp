@@ -2,7 +2,7 @@
 'use strict';
 
 var jarokelo = angular.module('jarokeloApp', ['ui.router',
- 'pascalprecht.translate', 'configuration', 'google-maps']);
+ 'pascalprecht.translate', 'configuration']);
 
 jarokelo.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
@@ -31,11 +31,6 @@ jarokelo.config(function ($stateProvider, $urlRouterProvider) {
       url: '/report/:reportId',
       templateUrl: 'views/report.details.html',
       controller: 'ReportDetailsCtrl'
-    })
-    .state('maps', {
-      url: '/maps',
-      templateUrl: 'views/maps.html',
-      controller: 'MapsCtrl'
     });
 });
 

@@ -8,6 +8,8 @@
   <link href="/styles/main.css" rel="stylesheet" type="text/css">	
    <!-- build:js scripts/angular.js -->
 
+   <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+
 		<!-- build:js scripts/vendor.js -->
    <!-- bower:js -->
    <script src="/bower_components/angular/angular.js"></script>
@@ -24,6 +26,7 @@
       <script src="scripts/controllers/list.js"></script>
       <script src="scripts/controllers/report.js"></script>
       <script src="scripts/directives/status.js"></script>
+    <script src="scripts/controllers/reportDetails.js"></script>
     <!-- endbuild -->
 </head>
 <body role="application">
@@ -37,7 +40,7 @@
         <h1>
            <a href="#/home" title="home"><img src="/images/logo.png" alt="{{ 'HEADLINE' | translate }}"></a>
         </h1>
-        <button class="menu-toggle icon-menu"></button>
+        <a href="#/home" class="button menu-toggle icon-menu"></a>
     </header>
 </section>
 

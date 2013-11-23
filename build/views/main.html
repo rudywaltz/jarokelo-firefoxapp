@@ -1,3 +1,7 @@
 <p> {{ 'CHOOSE_ONE_OPTION' | translate }}</p>
 <a class="recommend" role="button" href="#/city">{{'CITY' | translate }}</a>
 <a class="recommend" role="button" href="#/list">{{'LIST_VIEW' | translate }}</a>
+<div  ng-controller="TranslateCtrl">
+	<button ng-click="changeLanguage('hu')" translate="LANG_SELECT_HU"></button>
+ 	<button ng-click="changeLanguage('en')" translate="LANG_SELECT_EN"></button>
+</div>

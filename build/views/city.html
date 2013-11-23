@@ -1,6 +1,3 @@
 <h1>{{'CITY' | translate }}</h1>
 
-	<ul ng-repeat="city in citys">
-	<li>{{city.id}}</li>
-	<li>{{city.nazov}}</li>
-</ul>
+<a class="recommend" role="button" href="#/city/{{city.id}}" ng-repeat="city in citys">{{city.nazov}}</a>
