@@ -158,6 +158,7 @@ module.exports = function (grunt) {
             'scripts/**/*.js',
             'icons/**/*.{png,jpg,jpeg,svg}',
             'images/**/*.{png,gif,jpg,jpeg,svg}',
+            'views/*.html',
             '*.html',
             'manifest.webapp'
           ],

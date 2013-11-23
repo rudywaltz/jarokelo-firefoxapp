@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('jarokeloApp')
-  .controller('CityCtrl', ['$scope', '$http',
-		function ($scope, $http) {
-      $http.get('http://sandbox.odkazprestarostu.sk/api/mesta')
+  .controller('CityCtrl', ['$scope', '$http', 'API_SERVER_ENDPOINT',
+		function ($scope, $http, $server) {
+      $http.get($server + '/api/mesta')
       .success(function (data) {
         $scope.citys = data;
       });

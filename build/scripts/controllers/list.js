@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('jarokeloApp')
-  .controller('ListCtrl', ['$scope', '$http',
-		function ($scope, $http) {
-      $http.get('http://sandbox.odkazprestarostu.sk/api/list')
+  .controller('ListCtrl', ['$scope', '$http', 'API_SERVER_ENDPOINT',
+		function ($scope, $http, $server) {
+			$scope.server = $server;
+      $http.get($server + '/api/list')
       .success(function (data) {
         $scope.list = data.podnety;
       });

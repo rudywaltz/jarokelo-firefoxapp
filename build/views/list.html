@@ -1,0 +1,9 @@
+<h1>{{ 'LIST_VIEW' | translate }}</h1>
+
+<div>
+	<ul ng-repeat="report in list">
+		<li><a ng-href="#/list/{{report.id}}">{{report.nadpis}} {{report.status_id}}<br><small>url: {{ report.detail_url }}</small></a></li>
+		<li><img ng-src="http://www.sandbox.odkazprestarostu.sk/{{report.image}}" alt=""></li>
+	</ul>
+
+</div>
