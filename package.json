@@ -4,9 +4,8 @@
   "devDependencies": {
     "yo": "latest",
     "npm": "latest",
-    "grunt": "latest",
-    "grunt-cli": "latest",
     "grunt": "~0.4.1",
+    "grunt-cli": "latest",
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
@@ -18,6 +17,7 @@
     "grunt-firefoxos": "~0.1.1",
     "grunt-contrib-compress": "~0.5.2",
     "grunt-contrib-handlebars": "~0.5.9",
-    "node-firefoxos-cli": "~0.0.2"
+    "node-firefoxos-cli": "~0.0.2",
+    "grunt-contrib-uglify": "~0.2.7"
   }
 }

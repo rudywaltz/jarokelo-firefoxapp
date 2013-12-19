@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     'grunt-contrib-sass',
     'grunt-contrib-watch',
     'grunt-contrib-connect',
+    'grunt-contrib-uglify',
     'grunt-contrib-compress',
     'grunt-mocha',
     'grunt-firefoxos'
@@ -171,7 +172,7 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           cwd: 'app',
-          src: bowerFiles.map(function (x) { return 'components/' + x; }),
+          src: bowerFiles.map(function (x) { return 'bower_components/' + x; }),
           dest: 'build'
         }]
       },
