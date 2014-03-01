@@ -1,3 +1,5 @@
 <h1>{{'CITY' | translate }}</h1>
-
-<a role="button" href="#/city/{{city.id}}" ng-repeat="city in citys">{{city.nazov}}</a>
+<a role="button" ng-href="#/city/{{city.id}}" ng-repeat="city in citys">{{city.nazov}}</a>
+<div  ng-repeat="city in citys">
+	{{city.list_url}}
+</div>

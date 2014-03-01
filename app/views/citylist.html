@@ -1,11 +1,15 @@
+<p>This is the citylist view.</p>
+{{route}}
+
 <h2>{{ 'LIST_VIEW' | translate }}</h2>
 
 <div class="full-list">
-	<div ng-repeat="report in list" class="fader">
+
+	<div ng-repeat="report in list">
 	<!-- 	<a ng-href="#/report/{{report.id}}"> -->
 			<ul>
 				<li class="pic">
-					<img ng-src="http://www.odkazprestarostu.sk/{{report.image}}" alt="">
+					<img ng-src="http://sandbox.jarokelo.hu/{{report.image}}" alt="">
 					<div class="status status-{{report.status_id}}"></div>
 				</li><li class="info">
 				<h3 class="title">{{report.nadpis}}</h3>
