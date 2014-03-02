@@ -2,12 +2,13 @@
 
 angular.module('jarokeloApp')
   .controller('CitylistCtrl', function ($scope, $http, API_SERVER_ENDPOINT,
-    $routeParams) {
-    $scope.cityId = $routeParams.cityId;
-    $scope.page = parseInt($routeParams.pageId, 10);
+    $stateParams) {
+          console.log('callme');
+    $scope.cityId = $stateParams.cityId;
+    $scope.page = parseInt($stateParams.pageId, 10);
     $scope.server = API_SERVER_ENDPOINT;
-    $http.get(API_SERVER_ENDPOINT + '/api/list?mesto=' + $routeParams.cityId +
-     '&page=' + $routeParams.pageId)
+    $http.get(API_SERVER_ENDPOINT + '/api/list?mesto=' + $stateParams.cityId +
+     '&page=' + $stateParams.pageId)
       .success(function (data) {
         $scope.data = data;
         $scope.totalPage = parseInt(data.pocet_stran, 10);
