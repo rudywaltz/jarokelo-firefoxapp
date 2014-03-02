@@ -14,7 +14,7 @@ jarokelo.config(function ($locationProvider, $routeProvider) {
       templateUrl: 'views/city.html',
       controller: 'CityCtrl'
     })
-    .when('/city/:cityId', {
+    .when('/city/:cityId&page=:pageId', {
       templateUrl: 'views/citylist.html',
       controller: 'CitylistCtrl'
     })
@@ -26,12 +26,12 @@ jarokelo.config(function ($locationProvider, $routeProvider) {
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
     })
-    .when('//report/:reportId', {
+    .when('/report/:reportId', {
       templateUrl: 'views/report.details.html',
       controller: 'ReportDetailsCtrl'
     })
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   $locationProvider.html5Mode(false);
 });
@@ -44,7 +44,10 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Choose one option',
       CITY: 'City',
       REPORT: 'Report',
-      LIST_VIEW: 'List view'
+      LIST_VIEW: 'List view',
+      PREVIOUS: 'previous',
+      NEXT: 'next'
+
     })
     .translations('hu', {
       HEADLINE: 'Járókelő.hu',
@@ -53,7 +56,9 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Válasszon egy lehetőséget',
       CITY: 'Város',
       REPORT: 'Bejelentés',
-      LIST_VIEW: 'Legfrisebb bejelentések'
+      LIST_VIEW: 'Legfrisebb bejelentések',
+      PREVIOUS: 'előző',
+      NEXT: 'következő'
     });
     $translateProvider.preferredLanguage('hu');
   }]);

@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('jarokeloApp')
-  .controller('ReportDetailsCtrl', ['$scope', '$http', 'API_SERVER_ENDPOINT',
-   function ($scope, $http, $server) {
-		$scope.server = $server;
-		$http.get($server + '/api/podnet/?id/2604')
+  .controller('ReportDetailsCtrl', function ($scope, $http,
+    API_SERVER_ENDPOINT, $routeParams) {
+		$scope.server = API_SERVER_ENDPOINT;
+		$http.get(API_SERVER_ENDPOINT + '/api/podnet/?id=' + $routeParams.reportId)
 		.success(function (data) {
-			$scope = data;
+			$scope.report = data;
     });
-  }]);
+  });

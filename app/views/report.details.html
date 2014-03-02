@@ -1,4 +1,23 @@
-<p>This is the reportDetails view.</p>
-{{id}}
-<p>{{details}}</p>
-{{report.nadpis}}
+<h2>{{report.nadpis}}</h2>
+<small>{{report.user_name}}</small>
+
+<p>{{report.popis}}</p>
+
+<ul class="images-holder group">
+	<li ng-repeat="image in report.images">
+		<img ng-src="{{image}}" alt="">
+	</li>
+</ul>
+
+<ul>
+	<li ng-repeat="history in report.historia">
+			<img ng-src="{{history.obsah.icon}}" alt="">
+			<h4>{{history.obsah.meno}}</h4>
+			<time>{{history.obsah.datum}}</time>
+			<img ng-src="{{img}}" alt="" ng-repeat="img in history.obsah.images">
+			<p>{{history.obsah.text}}</p>
+		</div>
+	</li>
+</ul>
+
+{{report.historia}}

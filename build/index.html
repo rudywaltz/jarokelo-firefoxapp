@@ -4,7 +4,6 @@
   <title>Járókelő.hu</title>
   <meta charset="utf-8">
   <link href="/bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="/bower_components/angular-animate.css/angular-animate.css" rel="stylesheet" type="text/css">
    <!-- <link href="/styles/gaiabb/all.css" rel="stylesheet" type="text/css"> -->
   <link href="/styles/main.css" rel="stylesheet" type="text/css">	
    <!-- build:js scripts/angular.js -->
@@ -13,9 +12,10 @@
 		<!-- build:js scripts/vendor.js -->
    <!-- bower:js -->
    <script src="/bower_components/angular/angular.js"></script>
-   <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+   <script src="bower_components/angular-route/angular-route.js"></script>
+   <script src="bower_components/angular-resource/angular-resource.js"></script>
    <script src="/bower_components/angular-translate/angular-translate.js"></script>
-   <script src="/bower_components/angular-animate/angular-animate.js"></script>
+   <script src="bower_components/angular-touch/angular-touch.js"></script>
    <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,7 +27,8 @@
       <script src="scripts/controllers/list.js"></script>
       <script src="scripts/controllers/report.js"></script>
       <script src="scripts/directives/status.js"></script>
-    <script src="scripts/controllers/reportDetails.js"></script>
+      <script src="scripts/controllers/reportDetails.js"></script>
+      <script src="scripts/controllers/CityList.js"></script>
     <!-- endbuild -->
 </head>
 <body role="application">
@@ -45,7 +46,7 @@
     </header>
 </section>
 
-    <div id="main" ui-view="">
+    <div id="main" ng-view="">
    </div>  
    
 </body>

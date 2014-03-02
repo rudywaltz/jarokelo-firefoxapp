@@ -136,34 +136,18 @@ header {
 
           &.status-1 {
             background: $status-1;
-
-            &:before {
-              content: "Megoldva";
-            }
           }
 
           &.status-2 {
             background: $status-2;
-
-            &:before {
-              content: "Megoldatlan";
-            }
           }
 
           &.status-3 {
             background: $status-3;
-
-            &:before {
-              content: "Válaszra várunk";
-            }
           }
 
           &.status-4 {
             background: $status-7;
-
-            &:before {
-              content: "Döntésre vár";
-            }
           }
         }
       }
@@ -189,3 +173,45 @@ header {
     }
   }
 }
+
+.pager{
+  @extend .group;
+  a{
+    color: white;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    width: 35%
+  }
+  .prev{
+    background: lighten($link-color, 20%);
+    float: left;
+  }
+  .next{
+    background: $link-color;
+    float: right;
+  }
+  span{
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    width: 28%;
+  }
+}
+
+
+// report details
+
+.images-holder{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li{
+    float: left;
+    margin: 0;
+    padding: 0.2em;
+    width: 50%;
+  }
+}
+

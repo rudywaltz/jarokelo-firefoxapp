@@ -1,3 +1,16 @@
 <h1>{{'REPORT' | translate }}</h1>
 <p>{{details}}</p>
 {{report.nadpis}}
+<div ng-repeat="report in list" class="fader">
+	<!-- 	<a ng-href="#/report/{{report.id}}"> -->
+			<ul>
+				<li class="pic">
+					<img ng-src="http://www.odkazprestarostu.sk/{{report.image}}" alt="">
+					<div class="status status-{{report.status_id}}"></div>
+				</li><li class="info">
+				<h3 class="title">{{report.nadpis}}</h3>
+				<div class="dec">{{report.popis}}</div>
+				</li>
+			</ul>
+		<!-- </a> -->
+	</div>

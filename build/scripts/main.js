@@ -1,37 +1,39 @@
 // awesome javascript goes here
 'use strict';
 
-var jarokelo = angular.module('jarokeloApp', ['ui.router',
- 'pascalprecht.translate', 'ngAnimate', 'configuration']);
+var jarokelo = angular.module('jarokeloApp', ['ngRoute',
+ 'pascalprecht.translate', 'configuration']);
 
-jarokelo.config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/home');
-  $stateProvider
-    .state('home', {
-      url: '/home',
+jarokelo.config(function ($locationProvider, $routeProvider) {
+  $routeProvider
+    .when('/home', {
       templateUrl: 'views/main.html',
       // controller: 'MainCtrl'
     })
-    .state('city', {
-      url: '/city',
+    .when('/city', {
       templateUrl: 'views/city.html',
       controller: 'CityCtrl'
     })
-    .state('list', {
-      url: '/list',
+    .when('/city/:cityId&page=:pageId', {
+      templateUrl: 'views/citylist.html',
+      controller: 'CitylistCtrl'
+    })
+    .when('/list', {
       templateUrl: 'views/list.html',
       controller: 'ListCtrl'
     })
-    .state('report', {
-      url: '/report',
+    .when('/report', {
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
     })
-    .state('reportDetails', {
-      url: '/report/:reportId',
+    .when('/report/:reportId', {
       templateUrl: 'views/report.details.html',
       controller: 'ReportDetailsCtrl'
-    });
+    })
+    .otherwise({
+        redirectTo: '/home'
+      });
+  $locationProvider.html5Mode(false);
 });
 
 jarokelo.config(['$translateProvider', function ($translateProvider) {
@@ -42,7 +44,10 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Choose one option',
       CITY: 'City',
       REPORT: 'Report',
-      LIST_VIEW: 'List view'
+      LIST_VIEW: 'List view',
+      PREVIOUS: 'previous',
+      NEXT: 'next'
+
     })
     .translations('hu', {
       HEADLINE: 'Járókelő.hu',
@@ -51,7 +56,9 @@ jarokelo.config(['$translateProvider', function ($translateProvider) {
       CHOOSE_ONE_OPTION: 'Válasszon egy lehetőséget',
       CITY: 'Város',
       REPORT: 'Bejelentés',
-      LIST_VIEW: 'Legfrisebb bejelentések'
+      LIST_VIEW: 'Legfrisebb bejelentések',
+      PREVIOUS: 'előző',
+      NEXT: 'következő'
     });
     $translateProvider.preferredLanguage('hu');
   }]);
