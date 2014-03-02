@@ -4,9 +4,9 @@
 var jarokelo = angular.module('jarokeloApp', ['ngRoute',
  'pascalprecht.translate', 'configuration']);
 
-jarokelo.config(function ($routeProvider) {
+jarokelo.config(function ($locationProvider, $routeProvider) {
   $routeProvider
-    .when('/', {
+    .when('/home', {
       templateUrl: 'views/main.html',
       // controller: 'MainCtrl'
     })
@@ -31,8 +31,9 @@ jarokelo.config(function ($routeProvider) {
       controller: 'ReportDetailsCtrl'
     })
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
+  $locationProvider.html5Mode(false);
 });
 
 jarokelo.config(['$translateProvider', function ($translateProvider) {

@@ -1,35 +1,39 @@
 // awesome javascript goes here
 'use strict';
 
-var jarokelo = angular.module('jarokeloApp', ['ui.router',
+var jarokelo = angular.module('jarokeloApp', ['ngRoute',
  'pascalprecht.translate', 'configuration']);
 
-jarokelo.config(function ($stateProvider) {
-  $stateProvider
-    .state('home', {
-      url: '/home',
+jarokelo.config(function ($locationProvider, $routeProvider) {
+  $routeProvider
+    .when('/home', {
       templateUrl: 'views/main.html',
+      // controller: 'MainCtrl'
     })
-    .state('city', {
-      url: '/city',
+    .when('/city', {
       templateUrl: 'views/city.html',
       controller: 'CityCtrl'
     })
-    .state('city.cityId.pageId', {
-      url: '/city/:cityId&page=:pageId',
+    .when('/city/:cityId&page=:pageId', {
       templateUrl: 'views/citylist.html',
       controller: 'CitylistCtrl'
     })
-    .state('report', {
-      url: '/report',
+    .when('/list', {
+      templateUrl: 'views/list.html',
+      controller: 'ListCtrl'
+    })
+    .when('/report', {
       templateUrl: 'views/report.html',
       controller: 'ReportCtrl'
     })
-    .state('report.reportId', {
-      url: '/report/:reportId',
+    .when('/report/:reportId', {
       templateUrl: 'views/report.details.html',
       controller: 'ReportDetailsCtrl'
-    });
+    })
+    .otherwise({
+        redirectTo: '/home'
+      });
+  $locationProvider.html5Mode(false);
 });
 
 jarokelo.config(['$translateProvider', function ($translateProvider) {
